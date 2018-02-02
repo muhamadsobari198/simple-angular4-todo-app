@@ -1,0 +1,14 @@
+<div class="todoContainer"> 
+    <a class="btn btn-danger todo-remove" (click)="removeTodoItem(id)">
+        <span class="icon">
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+        </span>
+    </a>
+    <span>
+        <label class="todo-data">
+          <input type="checkbox" (change)="isChecked = !isChecked"/>
+          <span [ngClass]="{ 'todoText': true, 'done' : isChecked }">{{text}}</span>
+        </label>
+    </span>
+    
+</div> 

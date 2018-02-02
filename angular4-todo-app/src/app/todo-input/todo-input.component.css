@@ -1,0 +1,20 @@
+.todoFormContainer {
+    margin: 50px auto;
+}
+
+.todoFormContainer input {
+    width:75%;
+    margin-right: 15px;
+    border: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 5px;
+}
+
+.todoFormContainer input:focus {
+    outline: none;
+    border: none;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 5px;
+}

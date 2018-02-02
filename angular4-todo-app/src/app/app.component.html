@@ -1,0 +1,12 @@
+<div class="App">
+  <div class="Wrapper">
+    <Todo-Header></Todo-Header>
+    <Todo-Input (addTodo)="addTodoItem($event)"></Todo-Input>
+    <div class="todoWrapper" id="todoScroll">
+      <ul *ngFor="let todo of todos" key="todo.id">
+        <Todo-List [id]="todo.id" [text]="todo.text" (removeTodo)="removeTodoItem($event)"></Todo-List>
+      </ul> 
+    </div>
+  </div>
+</div>
+
